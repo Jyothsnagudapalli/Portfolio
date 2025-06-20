@@ -1,0 +1,241 @@
+*{
+    font-family: monospace;
+}
+
+body{
+    margin:0;
+    font-size: 15px;
+    background-color: azure;
+}
+
+header{
+    height:100vh;
+    color:white;
+    background-color:  #2196f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-size: 2rem;
+    color: #00bfff;
+    text-align: center;
+}
+header h1{
+    text-align: center;
+    color:white;
+}
+.button{
+    height:40px;
+    width:140px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin:15px;
+    align-items: center;
+    transition: all 2s ease 0s;
+
+}
+.button:hover{
+    color:white;
+    background-color: darkblue;
+    transform: translateY(-10px);
+}
+img{
+    
+    height: 250px;
+    width: 200px;
+    
+}
+main{
+    padding:20px;
+}
+
+section{
+    height:100vh;
+    border:1px solid grey;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+a{
+    text-decoration:none ;
+}
+form div{
+    margin:5px 0 0;
+}
+.submit{
+    height:50px;
+    width:100px;
+    border:none;
+    border-radius: 100px;
+    cursor:pointer;
+    color:white;
+    background-color: #2196f3;
+}
+.submit:hover{
+
+    background-color: #0d62a7;
+
+}
+input{
+    border-radius:5px;
+    border:1px solid lightgrey;
+    height:25px;
+}
+.fixedbutton{
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    height:70px;
+    width:70px;
+    border:none;
+    border-radius: 50%;
+    cursor:pointer;
+    color:white;
+    background-color: #2196f3;
+    border:2px solid black;
+    text-align: center;
+
+
+}
+footer{
+    height:100px;
+    background-color: black;
+    color:lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+p{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.about-section {
+    height: 100vh; /* Full height of screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.about-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+    max-width: 700px;
+    text-align: justify;
+}
+
+.about-text h1 {
+    color: #00bfff;
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: justify;
+    }
+
+    .about-section {
+        height: auto; /* Let it grow naturally on small screens */
+        padding: 20px 10px;
+    }
+}
+.about-image img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+html {
+  scroll-behavior: smooth;
+}
+.about-text p {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.about-text p:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f0f8ff; /* Light blue background on hover */
+}
+.about-text h1 {
+    color: #00bfff;
+    font-size: 1.8rem;
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.about-text h1:hover {
+    transform: scale(1.05);
+    color: #007acc;
+    text-shadow: 2px 2px 8px rgba(0, 191, 255, 0.5);
+}
+/* Hover effect for section headings */
+section h1:hover {
+    transform: scale(1.05);
+    color: #007acc;
+    text-shadow: 2px 2px 8px rgba(0, 191, 255, 0.5);
+    transition: all 0.3s ease;
+}
+
+/* Skills list pop-up effect */
+#skills li {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+#skills li:hover {
+    transform: scale(1.05);
+    background-color: #f0f8ff;
+}
+
+/* Projects table row pop-up effect */
+#projects table tr {
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#projects table tr:hover {
+    transform: scale(1.02);
+    background-color: #f0f8ff;
+}
+
